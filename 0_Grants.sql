@@ -1,7 +1,7 @@
 SET SERVEROUTPUT ON;
 DECLARE
     v_user_count NUMBER;
-    user_name VARCHAR2(30) := 'THE_LINE2';
+    user_name VARCHAR2(30) := 'The_Line';
     requiredPassword VARCHAR2(50) := 'newPassword@12345'; -- Specify the maximum size of the password
 BEGIN
     -- Check if the user already exists
