@@ -71,6 +71,13 @@ IS
     p_target_station_id VARCHAR2(20) := 'S013';
 
 BEGIN
+    -- Cleaning the data ...
+    Delete from Transaction;
+    Delete from Schedule;
+    Delete from Station;
+    Delete from Train;
+
+
     FOR current_train IN 1..20 LOOP
         v_train_id := 'T' || LPAD(TRAIN_ID_SEQ.NEXTVAL, 2, '0');
         DBMS_OUTPUT.PUT_LINE('Inserting Data [Train]: ' || v_train_id);
