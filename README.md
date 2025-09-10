@@ -30,4 +30,4 @@ Sequentially run the insertion scripts to populate the database with initial dat
 - Finally, `10_Views.sql` should be executed to create views that simplify data access and reporting.
 
 
-Testing --Prajwal new mac
+
